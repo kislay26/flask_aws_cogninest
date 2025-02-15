@@ -11,3 +11,4 @@ data/
 # Optionally, ignore other common files
 *.log
 *.sqlite3
+*ec2-passkey.pem

@@ -1,12 +1,8 @@
-"""
-Step 1: Data Collection (Raw Data)
-----------------------------------
-Downloads the IMDB movie reviews dataset from Hugging Face,
-converts numeric labels to sentiment strings ("positive"/"negative"),
-and saves the raw data as CSV files in the 'data' folder.
-Usage:
-    python data_collection.py
-"""
+
+# Downloads the IMDB movie reviews dataset from Hugging Face,
+# converts numeric labels to sentiment strings ("positive"/"negative"),
+# and saves the raw data as CSV files in the 'data' folder.
+
 
 import os
 from datasets import load_dataset

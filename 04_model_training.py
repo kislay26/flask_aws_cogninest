@@ -1,11 +1,7 @@
-"""
-Step: Model Training and Evaluation (Using Intermediate Data)
------------------------------------------------------------------
-Trains a sentiment analysis model (Logistic Regression with TF-IDF features) on the cleaned data,
-evaluates the model, and saves the trained pipeline as 'sentiment_model.pkl' in the 'data' folder.
-Usage:
-    python model_training.py
-"""
+
+# Trains a sentiment analysis model (Logistic Regression with TF-IDF features) on the cleaned data,
+# evaluates the model, and saves the trained pipeline as 'sentiment_model.pkl' in the 'model' folder.
+
 
 import os
 import pandas as pd
@@ -16,9 +12,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 import joblib
 
+model_DIR = "model"
 DATA_DIR = "data"
 CLEANED_CSV = os.path.join(DATA_DIR, "imdb_reviews_cleaned.csv")
-MODEL_FILE = os.path.join(DATA_DIR, "sentiment_model.pkl")
+MODEL_FILE = os.path.join(model_DIR, "sentiment_model.pkl")
 
 def load_data():
     df = pd.read_csv(CLEANED_CSV)

@@ -1,12 +1,7 @@
-"""
-Step: Data Cleaning (Intermediate Data)
------------------------------------------
-Connects to the SQLite database (imdb_reviews.db in 'data' folder), cleans the review text,
-and saves an intermediate CSV file (imdb_reviews_cleaned.csv) in the 'data' folder.
-The raw data remains unchanged.
-Usage:
-    python data_cleaning.py
-"""
+
+# Connects to the SQLite database (imdb_reviews.db in 'data' folder), cleans the review text,
+# and saves an intermediate CSV file (imdb_reviews_cleaned.csv) in the 'data' folder.
+
 
 import os
 import sqlite3

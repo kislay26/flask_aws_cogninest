@@ -1,13 +1,9 @@
-"""
-Optimized Flask Application for Sentiment Analysis with HTML UI
-----------------------------------------------------------------
-This Flask app loads the pre-trained sentiment analysis model (from the 'data' folder)
-and serves it via two endpoints:
-  - GET /       -> renders an HTML form for user input.
-  - POST /predict -> returns the sentiment prediction as JSON.
-Usage:
-    python app.py
-"""
+
+# This Flask app loads the pre-trained sentiment analysis model (from the 'model' folder)
+# and serves it via two endpoints:
+#   - GET /       -> renders an HTML form for user input.
+#   - POST /predict -> returns the sentiment prediction as JSON.
+
 
 import os
 from flask import Flask, request, jsonify, render_template
@@ -32,7 +28,7 @@ def clean_text(text: str) -> str:
     return text
 
 # Define data directory and model file path.
-DATA_DIR = "data"
+DATA_DIR = "model"
 MODEL_FILE = os.path.join(DATA_DIR, "sentiment_model.pkl")
 
 # Load the trained model at startup.

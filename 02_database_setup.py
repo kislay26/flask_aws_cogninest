@@ -1,11 +1,7 @@
-"""
-Step 2: Database Setup (Raw Data)
-----------------------------------
-Deletes any existing SQLite database, creates a new one (imdb_reviews.db) in the 'data' folder,
-and loads raw data from the CSV files into the 'imdb_reviews' table.
-Usage:
-    python database_setup.py
-"""
+
+# Deletes any existing SQLite database, creates a new one (imdb_reviews.db) in the 'data' folder,
+# and loads raw data from the CSV files into the 'imdb_reviews' table.
+
 
 import os
 import sqlite3
