@@ -1,0 +1,13 @@
+# Ignore virtual environment folder
+.venv/
+
+# Ignore Python cache files and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore the data folder (output files)
+data/
+
+# Optionally, ignore other common files
+*.log
+*.sqlite3
